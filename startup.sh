@@ -1,6 +1,6 @@
+sudo add-apt-repository ppa:sebastian-stenzel/cryptomator
 
 sudo apt update
-
 
 while true; do
     read -p "Do you wish to upgrade application?" yn
@@ -80,7 +80,7 @@ done
 while true; do
     read -p "Do you wish to install other application essentials?" yn
     case $yn in
-        [Yy]* ) sudo snap install vlc; sudo apt install -y meld; flatpak install -y zotero; sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg;  break;;
+        [Yy]* ) sudo snap install vlc; sudo apt install -y meld cryptomator; flatpak install -y zotero; sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg;  break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
