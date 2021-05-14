@@ -1,4 +1,5 @@
 sudo add-apt-repository ppa:sebastian-stenzel/cryptomator
+sudo add-apt-repository ppa:lazygit-team/daily
 
 sudo apt update
 
@@ -80,7 +81,7 @@ done
 while true; do
     read -p "Do you wish to install other application essentials?" yn
     case $yn in
-        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install yakyak; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y speedcrunch qalculate cryptomator zsh; flatpak install -y zotero; sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg; break;;
+        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install yakyak; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y speedcrunch qalculate zsh lazygit; flatpak install -y zotero; sudo apt install -y libavcodec-extra libdvd-pkg; sudo dpkg-reconfigure libdvd-pkg; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
