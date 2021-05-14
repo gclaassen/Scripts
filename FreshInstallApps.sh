@@ -1,5 +1,5 @@
 sudo add-apt-repository ppa:sebastian-stenzel/cryptomator
-sudo add-apt-repository ppa:lazygit-team/daily
+sudo add-apt-repository ppa:lazygit-team/release
 
 sudo apt update
 
