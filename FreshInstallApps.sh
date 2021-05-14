@@ -99,7 +99,7 @@ done
 while true; do
     read -p "Do you wish to update the oh-my-zsh?" yn
     case $yn in
-        [Yy]* ) scd ~/Downloads; sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)";  break;;
+        [Yy]* ) scd ~/Downloads; sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"; sudo apt install -y fonts-powerline;  break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
