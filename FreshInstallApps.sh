@@ -81,7 +81,7 @@ done
 while true; do
     read -p "Do you wish to install other application essentials?" yn
     case $yn in
-        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install yakyak; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y speedcrunch zsh lazygit; sudo snap install qalculate; flatpak install -y zotero; break;;
+        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install yakyak; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y speedcrunch zsh lazygit steam; sudo snap install qalculate; flatpak install -y zotero; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -90,7 +90,7 @@ done
 while true; do
     read -p "Do you wish to install security and encryption measures?" yn
     case $yn in
-        [Yy]* ) sudo apt install -y cryptomator steghide qrencode; cd ~/Downloads; wget https://files.dyne.org/tomb/Tomb-2.9.tag.qz; tar xvfz Tomb-2.9.tag.qz; cd Tomb-2.9; sudo make install; break;;
+        [Yy]* ) sudo apt install -y cryptomator steghide qrencode; cd ~/Downloads; wget https://files.dyne.org/tomb/Tomb-2.9.tar.gz ; tar xvfz Tomb-2.9.tag.qz ; cd Tomb-2.9; sudo make install; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
