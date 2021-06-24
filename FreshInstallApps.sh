@@ -36,7 +36,7 @@ done
 while true; do
     read -p "Do you wish to install networking and vpn essentials?" yn
     case $yn in
-        [Yy]* ) sudo apt -y openssh-client; sudo apt install -y openconnect network-manager-openconnect network-manager-openconnect-gnome; sudo apt install -y openvpn network-manager-openvpn network-manager-openvpn-gnome; sudo apt-get install surfshark-vpn; break;;
+        [Yy]* ) sudo apt -y install openssh-client; sudo apt install -y openconnect network-manager-openconnect network-manager-openconnect-gnome; sudo apt install -y openvpn network-manager-openvpn network-manager-openvpn-gnome; mkdir ~/tmp; cd ~/tmp; wget https://ocean.surfshark.com/debian/pool/main/s/surfshark-release/surfshark-release_1.0.0-2_amd64.deb; sudo dpkg -i surfshark-release_1.0.0-2_amd64.deb; sudo apt update; sudo apt-get install surfshark-vpn; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -90,7 +90,7 @@ done
 while true; do
     read -p "Do you wish to install security and encryption measures?" yn
     case $yn in
-        [Yy]* ) sudo apt install -y cryptomator steghide qrencode; cd ~/Downloads; wget https://files.dyne.org/tomb/Tomb-2.9.tar.gz ; tar xvfz Tomb-2.9.tag.qz ; cd Tomb-2.9; sudo make install; break;;
+        [Yy]* ) sudo apt install -y cryptomator steghide qrencode; mkdir ~/tmp; cd ~/tmp; wget https://files.dyne.org/tomb/Tomb-2.9.tar.gz ; tar xvfz Tomb-2.9.tag.qz ; cd Tomb-2.9; sudo make install; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -99,7 +99,7 @@ done
 while true; do
     read -p "Do you wish to update the oh-my-zsh?" yn
     case $yn in
-        [Yy]* ) scd ~/Downloads; sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"; sudo apt install -y fonts-powerline;  break;;
+        [Yy]* ) mkdir ~/tmp; cd ~/tmp; sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"; sudo apt install -y fonts-powerline;  break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
