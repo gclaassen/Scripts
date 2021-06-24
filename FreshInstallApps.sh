@@ -81,7 +81,7 @@ done
 while true; do
     read -p "Do you wish to install other application essentials?" yn
     case $yn in
-        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install drawio; sudo snap install yakyak; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y speedcrunch zsh lazygit steam calibre; sudo snap install qalculate; flatpak install -y zotero; break;;
+        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install drawio; sudo snap install yakyak; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y speedcrunch zsh lazygit steam calibre deluge; sudo snap install qalculate; flatpak install -y zotero; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
