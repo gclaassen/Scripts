@@ -63,7 +63,7 @@ done
 while true; do
     read -p "Do you wish to install latest python (3.9.4)?" yn
     case $yn in
-        [Yy]* ) sudo apt install build-essential libssl-dev libreadline-dev libffi-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev python-tk python3-tk tk-dev; mkdir ~/tmp; cd ~/tmp; wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz; tar -xvzf Python-3.9.4.tgz; cd Python-3.9.4; ./configure --enable-optimizations; sudo make; sudo make install; python3.9 --version; cd ~/tmp; break;;
+        [Yy]* ) sudo apt install build-essential libbz2-dev libssl-dev libreadline-dev libffi-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev python-tk python3-tk tk-dev; mkdir ~/tmp; cd ~/tmp; wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz; tar -xvzf Python-3.9.4.tgz; cd Python-3.9.4; ./configure --enable-optimizations; sudo make; sudo make install; python3.9 --version; cd ~/tmp; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
