@@ -63,7 +63,7 @@ done
 while true; do
     read -p "Do you wish to install latest python (3.9.4)?" yn
     case $yn in
-        [Yy]* ) sudo apt install libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev; mkdir ~/tmp; cd ~/tmp; wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz; tar -xvzf Python-3.9.4.tgz; cd Python-3.9.4; ./configure --enable-optimizations; sudo make; sudo make install; python3.9 --version; cd ~/tmp; break;;
+        [Yy]* ) sudo apt install build-essential libssl-dev libreadline-dev libffi-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev python-tk python3-tk tk-dev; mkdir ~/tmp; cd ~/tmp; wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz; tar -xvzf Python-3.9.4.tgz; cd Python-3.9.4; ./configure --enable-optimizations; sudo make; sudo make install; python3.9 --version; cd ~/tmp; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -81,7 +81,7 @@ done
 while true; do
     read -p "Do you wish to install other application essentials?" yn
     case $yn in
-        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install drawio; sudo snap install yakyak; sudo snap install spotify; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install -y mc speedcrunch zsh lazygit steam calibre deluge; sudo snap install qalculate; flatpak install -y zotero; break;;
+        [Yy]* ) sudo snap install ohmygiraffe; sudo snap install drawio; sudo snap install yakyak; sudo snap install spotify; sudo snap install boa; sudo snap install gnome-clocks; sudo snap install vlc; sudo snap install qaclculate; sudo snap install syncthing; sudo snap install inkscape; sudo snap install telegram-desktop; sudo snap install whatsapp-for-linux; sudo apt install steam-installer; sudo apt install -y mc speedcrunch zsh lazygit calibre deluge; sudo snap install qalculate; flatpak install -y zotero; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
