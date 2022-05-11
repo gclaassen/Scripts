@@ -17,3 +17,10 @@ https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html -> testing to s
 	- ```conda activate cusignal-dev```
 - To deactivate cuSignal use:
 	- ```conda deactivate```
+
+- Install SDR tools:
+	- https://wiki.gnuradio.org/index.php/InstallingGR#Ubuntu_PPA_Installation
+	- https://github.com/gnuradio/gnuradio#pybombs
+	- https://github.com/rapidsai/cusignal#sdr-integration
+	- https://github.com/pothosware/SoapySDR/wiki
+	- https://github.com/roger-/pyrtlsdr
